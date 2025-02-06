@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0f4c5c;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background-color: white;
+            width: 80%;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .img-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h2 {
+            font-style: normal;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 95%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: 10px 0;
+        }
+
+        .remember input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            border-radius: 25%;
+            appearance: none;
+            background: #ddd;
+            cursor: pointer;
+        }
+
+        .remember input[type="checkbox"]:checked {
+            background: #0f6369;
+        }
+
+        button {
+            width: 70%;
+            padding: 10px;
+            background-color: #0f6369;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0C3B4A;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="img-section">
+            <img src="assets/images/gambarlogin.png" alt="Login Illustration">
+        </div>
+        <div class="form-section">
+            <h2>Selamat Datang!</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Ingat Saya</label>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
